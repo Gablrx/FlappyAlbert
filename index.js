@@ -112,7 +112,7 @@ setup();
 img.onload = render;
 
 // start game
-document.addEventListener('click', 'touchstart', () => gamePlaying = true);
+document.addEventListener('click', () => gamePlaying = true);
 window.onclick = () => flight = jump;
 
 
