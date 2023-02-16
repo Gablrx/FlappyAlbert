@@ -63,8 +63,8 @@ const render = () => {
                 // ajoute score+1
                 currentScore++;
 
-                // rapproche les tuyaux de 1.5px
-                pipeGap = pipeGap - 1.5;
+                // rapproche les tuyaux de 1px
+                pipeGap = pipeGap - 1;
 
                 // check si meilleur score
                 bestScore = Math.max(bestScore, currentScore);
@@ -112,8 +112,10 @@ setup();
 img.onload = render;
 
 // start game
-document.addEventListener('click', () => gamePlaying = true);
+document.addEventListener('click', 'touchstart', () => gamePlaying = true);
 window.onclick = () => flight = jump;
+
+
 
 document.addEventListener('keydown', event => {
     if (event.code === 'Space') {
