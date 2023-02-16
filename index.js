@@ -114,6 +114,7 @@ img.onload = render;
 // start game
 document.addEventListener('click', () => gamePlaying = true);
 document.addEventListener('mousedown', () => flight = jump);
+document.addEventListener('touchstart', () => flight = jump);
 /* window.onclick = () => flight = jump; */
 
 
