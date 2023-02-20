@@ -1,7 +1,17 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const img = new Image();
-img.src = "flappy-albert.png";
+
+// Jour ou nuit ?
+const hours = new Date().getHours()
+const isDayTime = hours > 6 && hours < 19;
+if (isDayTime) {
+    img.src = "flappy-albert.png";
+} else {
+    img.src = "flappy-albert-by-night.png";
+
+}
+
 
 // paramètres
 let gamePlaying = false;
