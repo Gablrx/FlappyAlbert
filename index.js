@@ -14,7 +14,7 @@ const jump = -8.5;
 const cTenth = (canvas.width / 10);
 
 let index = 0,
-    bestScore = bestScore = localStorage.getItem("highscore") || 0,
+    bestScore = localStorage.getItem("highscore") || 0,
     flight,
     flyHeight,
     currentScore,
