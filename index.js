@@ -9,7 +9,6 @@ if (isDayTime) {
     img.src = "flappy-albert.png";
 } else {
     img.src = "flappy-albert-by-night.png";
-
 }
 
 
